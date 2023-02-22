@@ -27,13 +27,20 @@ PRODUCT_PACKAGES += \
     Camera2 \
     Contacts \
     DeskClock \
+    ExactCalculator \
     Gallery2 \
     LatinIME \
     Music \
     OneTimeInitializer \
     preinstalled-packages-platform-handheld-product.xml \
+    QuickSearchBox \
     SettingsIntelligence \
+    SettingsIntelligence \
+    TrichromeChrome \
     frameworks-base-overlays
 
 PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug
+    
+# Build in theming functionality
+$(call inherit-product-if-exists, themes/main.mk)    
